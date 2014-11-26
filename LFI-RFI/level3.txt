@@ -1,0 +1,6 @@
+<?php
+$files = scandir("../../../../home/level");
+foreach($files as $file){
+	echo $file;
+}
+?>
