@@ -1,3 +1,0 @@
-<?php
-echo file_get_contents("/var/www/level2%00");
-?>
