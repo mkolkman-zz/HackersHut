@@ -1,0 +1,3 @@
+<?php
+echo mysql_query("SELECT * FROM products");
+?>

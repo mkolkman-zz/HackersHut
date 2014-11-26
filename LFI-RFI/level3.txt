@@ -1,5 +1,5 @@
 <?php
-$files = scandir("../../../../home/level");
+$files = scandir("../../../../home/level3");
 foreach($files as $file){
 	echo $file;
 }
