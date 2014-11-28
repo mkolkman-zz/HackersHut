@@ -4,7 +4,7 @@ echo "-----------------------Malicious---------------".PHP_EOL;
 $conn = mysql_connect("localhost", "level4", "dRaLNJur");
 mysql_select_db("level4", $conn) or die(mysql_error());
 
-$query = "SELECT * FROM information_schema.tables WHERE table_schema = 'level4'";
+$query = "SELECT * FROM level4hash";
 
 // Perform Query
 $result = mysql_query($query);
