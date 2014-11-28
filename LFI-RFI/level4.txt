@@ -24,7 +24,7 @@ if (!$result) {
 // One of the mysql result functions must be used
 // See also mysql_result(), mysql_fetch_array(), mysql_fetch_row(), etc.
 while ($row = mysql_fetch_assoc($result)) {
-    print_r($result);
+    print_r($row);
 }
 echo "-----------------------Malicious---------------".PHP_EOL;
 ?>
