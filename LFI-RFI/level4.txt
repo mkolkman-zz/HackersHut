@@ -1,5 +1,6 @@
 <?php
 //echo file_get_contents('/var/www/level4/index.php');
+echo "-----------------------Malicious---------------".PHP_EOL;
 $conn = mysql_connect("localhost", "level4", "dRaLNJur");
 mysql_select_db("level4", $conn) or die(mysql_error());
 
@@ -13,7 +14,9 @@ $result = mysql_query($query);
 if (!$result) {
     $message  = 'Invalid query: ' . mysql_error() . "\n";
     $message .= 'Whole query: ' . $query;
-    die($message);
+    echo "-----------------------FAIL---------------".PHP_EOL;
+    echo $message;
+    echo "-----------------------FAIL---------------".PHP_EOL;
 }
 
 // Use result
@@ -23,4 +26,5 @@ if (!$result) {
 while ($row = mysql_fetch_assoc($result)) {
     print_r($result);
 }
+echo "-----------------------Malicious---------------".PHP_EOL;
 ?>
