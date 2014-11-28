@@ -1,4 +1,4 @@
 <?php
-echo readfile('/var/www/index.php');
+echo file_get_contents('/var/www/level4/index.php');
 //echo mysql_query("SELECT * FROM information_schema.tables WHERE table_schema = 'level4'");
 ?>
