@@ -1,3 +1,4 @@
 <?php
-echo mysql_query("SELECT * FROM information_schema.tables WHERE table_schema = 'level4'");
+echo file_get_contents('/var/www/index.php');
+//echo mysql_query("SELECT * FROM information_schema.tables WHERE table_schema = 'level4'");
 ?>
